@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Nicolas Martinico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #f0f0f0;
+            background: url('background-tech.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 40px;
+            animation: fadeInDown 1s ease;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #00b4d8;
+            margin: 0;
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 50px;
+            margin: 20px;
+            border-radius: 15px;
+            animation: fadeIn 2s ease;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #00b4d8;
+            margin-bottom: 20px;
+        }
+
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        a {
+            color: #00b4d8;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            border: 1px solid #00b4d8;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #0077b6;
+            color: white;
+        }
+
+        table td {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        #cv-section {
+            margin-top: 50px;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        #cv-section img {
+            width: 60%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio de Nicolas Martinico</h1>
+    </header>
+
+    <section id="presentation">
+        <h2>Présentation personnelle</h2>
+        <p>Je m’appelle Nicolas Martinico, né le 10 juillet 2004. Actuellement, je poursuis un BTS Services Informatiques aux Organisations (SIO), option Solutions d'Infrastructures, Systèmes et Réseaux (SISR). Je suis passionné par les nouvelles technologies et je m'intéresse tout particulièrement à l'administration des réseaux et à la sécurité informatique.</p>
+        <p>Mon objectif à long terme est de créer ma propre entreprise spécialisée dans la gestion des parcs informatiques.</p>
+    </section>
+
+    <section id="veille-technologique">
+        <h2>Veille technologique</h2>
+        <p>Dans un domaine en constante évolution, il est essentiel de maintenir une veille technologique active. J'utilise des outils comme <strong>Feedly</strong>, <strong>Twitter</strong>, et des forums spécialisés pour rester informé. Mon sujet de veille actuel porte sur les avancées en matière de sécurité des réseaux et l’automatisation des infrastructures IT.</p>
+    </section>
+
+    <section id="experience-professionnelle">
+        <h2>Expériences professionnelles</h2>
+        <ul>
+            <li><strong>VOIP-TELECOM (2021-2022)</strong> : Stages en administration système, gestion des droits NTFS, Active Directory, et maintenance du stock informatique.</li>
+            <li><strong>Green Cube (2022)</strong> : Stage en câblage réseau et gestion d'infrastructures physiques.</li>
+            <li><strong>VOIP-TELECOM (2022-2023)</strong> : CDD en tant que technicien support niveau 1 et 2.</li>
+        </ul>
+    </section>
+
+    <section id="formation">
+        <h2>Formation</h2>
+        <ul>
+            <li><strong>Lycée Robert Schuman, Dugny (2020-2023)</strong> : Bac Pro Systèmes Numériques, option RISC (Informatique)</li>
+            <li><strong>BTS SIO, option SISR (2023-2025)</strong> : Actuellement en première année</li>
+        </ul>
+    </section>
+
+    <section id="competences">
+        <h2>Synthèse des compétences</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Compétences</th>
+                    <th>Expériences</th>
+                    <th>Commentaires</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Configuration de switch et routeur</td>
+                    <td>Stage chez VOIP-TELECOM, CDD chez VOIP-TELECOM</td>
+                    <td>Équipements Cisco et Netgear</td>
+                </tr>
+                <tr>
+                    <td>Administration système (Windows/Linux)</td>
+                    <td>Stage chez VOIP-TELECOM, CDD</td>
+                    <td>Gestion des droits NTFS, Active Directory</td>
+                </tr>
+                <tr>
+                    <td>Câblage réseau</td>
+                    <td>Stage chez Green Cube</td>
+                    <td>Installation complète de câblage réseau</td>
+                </tr>
+                <tr>
+                    <td>Codage (Python, MySQL)</td>
+                    <td>Projets personnels et académiques</td>
+                    <td>Scripts et gestion de base de données simples</td>
+                </tr>
+                <tr>
+                    <td>Communication et gestion client</td>
+                    <td>Stages et CDD</td>
+                    <td>Renforcement des compétences relationnelles</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Contactez-moi à <a href="mailto:N.Martinico@outlook.com">N.Martinico@outlook.com</a></p>
+        <p><a href="#cv-section">Voir mon CV</a></p>
+    </footer>
+
+    <section id="cv-section">
+        <h2>Mon CV</h2>
+        <img src="/mnt/data/image.png" alt="CV de Nicolas Martinico">
+    </section>
+
+</body>
+</html>
