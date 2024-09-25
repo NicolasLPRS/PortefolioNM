@@ -23,8 +23,73 @@
             animation: fadeInDown 1s ease;
         }
 
+        #header {
+            padding: 20px 0; /* Adjust the padding if needed */
+        }
+
         header h1 {
-            font-size: 3em;
+            font-size: 2em; /* Reduced size for the new header */
+            margin: 0;
+        }
+
+        /* Style de la barre de navigation */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 10px 15px; /* Réduction du padding */
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5); /* Réduction de l'ombre */
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Ajout d'une bordure pour un effet visuel */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 10px; /* Réduction de la marge */
+        }
+
+        .navbar a {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700; /* Augmentation du poids de la police */
+            font-size: 16px; /* Augmentation de la taille de la police */
+            color: #00b4d8;
+            text-decoration: none;
+            padding: 8px 15px; /* Réduction du padding */
+            border-radius: 4px; /* Légère réduction du rayon */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #00b4d8;
+            color: #000;
+        }
+
+        .navbar a:active {
+            background-color: #0077b6;
+            color: #fff;
+        }
+
+        /* Encadré pour "Automobile et IA" */
+        .automobile-ai {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 20px 0; /* Ajout d'une marge pour séparer de la barre de navigation */
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .automobile-ai h2 {
+            color: #00b4d8;
             margin: 0;
         }
 
@@ -135,9 +200,26 @@
 
 <body>
 
-    <header>
-        <h1>Veille Technologique : Automobile et IA</h1>
-    </header>
+    <header id="header" class="header d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="https://nicolaslprs.github.io/PortefolioNM/" class="logo d-flex align-items-center">
+                <h1>Portefolio de Nicolas Martinico</h1>
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="https://nicolaslprs.github.io/PortefolioNM/">Accueil</a></li>
+                    <li><a href="#cv-section">Voir mon CV</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+    </header><!-- End Header -->
+
+    <!-- Encadré pour Automobile et IA -->
+    <div class="automobile-ai">
+        <h2>Automobile et IA</h2>
+    </div>
 
     <main>
         <h2>Introduction</h2>
