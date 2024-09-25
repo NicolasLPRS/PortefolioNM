@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Ajoute les styles CSS ici */
+
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
@@ -26,6 +28,51 @@
             font-size: 3em;
             color: #00b4d8;
             margin: 0;
+        }
+
+        /* Style de la barre de navigation */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #00b4d8;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #00b4d8;
+            color: #000;
+        }
+
+        .navbar a:active {
+            background-color: #0077b6;
+            color: #fff;
         }
 
         section {
@@ -105,36 +152,23 @@
         }
     </style>
 </head>
-    <header id="header" class="header d-flex align-items-center">
-
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>VolVif<span>.</span></h1>
-      </a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#hero">Accueil</a></li>
-          <li><a href="#about">Vols</a></li>
-          <li><a href="#services">Mes vols</a></li>
-          <li class="dropdown"><a href="#"><span>Top Destination</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-          </li>
-          <li><a href="#cv-section">Voir mon CV</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
-    </div>
-  </header><!-- End Header -->
-  <!-- End Header -->
 <body>
 
-    <header>
-        <h1>Portefolio de Nicolas Martinico</h1>
-    </header>
+    <header id="header" class="header d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="https://nicolaslprs.github.io/PortefolioNM/" class="logo d-flex align-items-center">
+                <h1>Portfolio de Nicolas Martinico<span>.</span></h1>
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="https://nicolaslprs.github.io/PortefolioNM/">Accueil</a></li>
+                    <li><a href="#cv-section">Voir mon CV</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        </div>
+    </header><!-- End Header -->
 
     <section id="presentation">
         <h2>Présentation personnelle</h2>
@@ -142,13 +176,11 @@
         <p>Mon objectif à long terme est de créer ma propre entreprise spécialisée dans la gestion des parcs informatiques.</p>
     </section>
 
-    
     <section id="veille-technologique">
         <h2>Veille technologique</h2>
         <p>Dans un domaine en constante évolution, il est essentiel de maintenir une veille technologique active. J'utilise des outils comme <strong>Feedly</strong>, <strong>Twitter</strong>, et des forums spécialisés pour rester informé. Mon sujet de veille actuel porte sur l'Automobile et l'IA. Pour plus d'informations, consultez ma <a href="https://nicolaslprs.github.io/PortefolioNM/veille_technologie.html">page de veille technologique</a>.</p>
     </section>
     
-
     <section id="experience-professionnelle">
         <h2>Expériences professionnelles</h2>
         <ul>
