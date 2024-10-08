@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS SIO - Nicolas Martinico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ajoute les styles CSS ici */
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #f0f0f0;
+            background: url('background-tech.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 40px;
+            animation: fadeInDown 1s ease;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #00b4d8;
+            margin: 0;
+        }
+
+        /* Style de la barre de navigation */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #00b4d8;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #00b4d8;
+            color: #000;
+        }
+
+        .navbar a:active {
+            background-color: #0077b6;
+            color: #fff;
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 50px;
+            margin: 20px;
+            border-radius: 15px;
+            animation: fadeIn 2s ease;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #00b4d8;
+            margin-bottom: 20px;
+        }
+
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        a {
+            color: #00b4d8;
+            text-decoration: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header" class="header d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="https://nicolaslprs.github.io/PortefolioNM/" class="logo d-flex align-items-center">
+                <h1>BTS SIO - Nicolas Martinico</h1>
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="https://nicolaslprs.github.io/PortefolioNM/">Accueil</a></li>
+                    <li><a href="#presentation-bts">BTS SIO</a></li>
+                    <li><a href="https://nicolaslprs.github.io/PortefolioNM/veille_technologie.html">Ma Veille Technologique</a></li>
+                    <li><a href="https://nicolaslprs.github.io/PortefolioNM/#cv-section">Voir mon CV</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+
+    <section id="presentation-bts">
+        <h2>Présentation du BTS SIO - Option SISR</h2>
+        <p>Le BTS Services Informatiques aux Organisations (SIO) est une formation en deux ans qui forme des techniciens spécialisés dans l'administration des infrastructures réseau et la gestion des systèmes d'information. Mon option, Solutions d'Infrastructures, Systèmes et Réseaux (SISR), me permet de me concentrer sur la mise en place et la gestion de réseaux informatiques sécurisés.</p>
+    </section>
+
+    <section id="projets-bts">
+        <h2>Projets réalisés pendant le BTS</h2>
+        <ul>
+            <li>Configuration d'un réseau local sécurisé avec des équipements Cisco.</li>
+            <li>Déploiement de serveurs sous Windows et Linux avec gestion des utilisateurs via Active Directory.</li>
+            <li>Virtualisation avec Hyper-V pour la gestion de machines virtuelles.</li>
+            <li>Optimisation de la sécurité réseau avec des solutions de pare-feu et de surveillance réseau.</li>
+        </ul>
+    </section>
+
+    <section id="competences-bts">
+        <h2>Compétences acquises</h2>
+        <p>Durant cette formation, j'ai acquis des compétences en :</p>
+        <ul>
+            <li>Administration des réseaux et des systèmes d'information.</li>
+            <li>Sécurisation des infrastructures réseau.</li>
+            <li>Gestion de projets informatiques et de services en entreprise.</li>
+            <li>Virtualisation et gestion des serveurs.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contactez-moi à <a href="mailto:N.Martinico@outlook.com">N.Martinico@outlook.com</a></p>
+    </footer>
+
+</body>
+</html>
